@@ -1,0 +1,14 @@
+[core]
+	excludesfile = ~/.gitignore
+[user]
+	name = Sam Stoelinga
+	email = xxxemailxxx
+[color]
+	ui = auto
+[merge]
+	tool = vimdiff
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	lol = log --pretty=oneline --abbrev-commit --graph --decorate
+[push]
+	default = simple
