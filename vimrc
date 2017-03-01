@@ -1,6 +1,3 @@
-execute pathogen#infect()
-execute pathogen#helptags()
-
 set tabstop=4
 set shiftwidth=4
 set autoindent
@@ -17,16 +14,6 @@ set foldmethod=indent
 set foldlevel=99
 
 let mapleader = ","
-nmap <leader>a <Esc>:Ack!
-
-" python-mode vim plugin
-
-
-" Custom plugins
-map <C-n> :NERDTreeToggle<CR>
-
-" Automatically save when pressing escape
-"inoremap <Esc> <Esc>:w<CR>
 
 " Show full path on status bar with column
 set laststatus=2

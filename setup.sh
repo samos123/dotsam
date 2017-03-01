@@ -57,9 +57,4 @@ sed -i s/xxxemailxxx/$email/g ~/.gitconfig
 
 # Setup tmux and tmuxinator
 cp $DIR/tmux.conf ~/.tmux.conf
-cp $DIR/tmuxinator ~/.tmuxinator -r
 
-# Setup custom configuration for pip (Use Chinese mirror)
-if ask "Do you want to use a Chinese mirror for pip?"; then
-    cp $DIR/pip ~/.pip -r
-fi
