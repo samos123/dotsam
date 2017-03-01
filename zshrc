@@ -34,7 +34,7 @@ export EDITOR='vim'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git pip virtualenvwrapper ruby vagrant gem fabric mercurial)
+plugins=(git vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
