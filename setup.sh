@@ -47,7 +47,6 @@ sudo chsh -s /usr/bin/zsh
 
 # Setup vim
 cp $DIR/vimrc ~/.vimrc
-cp -r $DIR/vim ~/.vim
 
 # Setup git
 cp $DIR/gitconfig ~/.gitconfig
