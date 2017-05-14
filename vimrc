@@ -34,6 +34,7 @@ set smarttab
 set number
 set expandtab
 set list
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
 set path=.,,**
 set foldmethod=indent
 set foldlevel=99
@@ -50,3 +51,6 @@ command W w !sudo tee % > /dev/null
 
 " Fix .md files to use markdown syntax
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" bind nerdtree to ctrl + n
+map <C-n> :NERDTreeToggle<CR>
