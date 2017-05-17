@@ -58,3 +58,6 @@ sed -i s/xxxemailxxx/$email/g ~/.gitconfig
 # Setup tmux and tmuxinator
 cp $DIR/tmux.conf ~/.tmux.conf
 
+# Add lilyterm conf
+cp lilyterm.conf ~/.config/lilyterm/default.conf
+
