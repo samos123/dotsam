@@ -36,11 +36,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Setup oh-my-zsh and zsh
 cp $DIR/zshrc ~/.zshrc
-if [ -d ~/.oh-my-zsh ]; then
-    cd ~/.oh-my-zsh && git pull
-else
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-fi
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Make zsh default shell (Requires root)
 sudo chsh -s /usr/bin/zsh
@@ -57,7 +53,3 @@ sed -i s/xxxemailxxx/$email/g ~/.gitconfig
 
 # Setup tmux and tmuxinator
 cp $DIR/tmux.conf ~/.tmux.conf
-
-# Add lilyterm conf
-cp lilyterm.conf ~/.config/lilyterm/default.conf
-
