@@ -19,6 +19,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'mileszs/ack.vim'
 Plugin 'fatih/vim-go'
+Plugin 'prettier/vim-prettier'
 
 
 call vundle#end()            " required
