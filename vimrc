@@ -20,7 +20,10 @@ Plugin 'tpope/vim-surround'
 Plugin 'mileszs/ack.vim'
 Plugin 'fatih/vim-go'
 Plugin 'prettier/vim-prettier'
-
+Plugin 'andymass/vim-matchup'
+Plugin 'iamcco/markdown-preview.nvim'
+Plugin 'hashivim/vim-terraform'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -55,3 +58,15 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " bind nerdtree to ctrl + n
 map <C-n> :NERDTreeToggle<CR>
+
+if &diff
+    colorscheme evening
+endif
+
+" Better highlighting colors for matchup
+hi MatchParen ctermbg=blue guibg=lightblue cterm=italic gui=italic
+
+let g:go_fmt_command="gopls"
+let g:go_gopls_gofumpt=1
+
+let g:terraform_fmt_on_save=1
