@@ -18,9 +18,9 @@ sed -i s/xxxemailxxx/$email/g ~/.gitconfig
 cp $DIR/tmux.conf ~/.tmux.conf
 
 # Setup oh-my-zsh and zsh
-cp $DIR/zshrc ~/.zshrc
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Make zsh default shell (Requires root)
 sudo chsh -s /usr/bin/zsh $USER
 
+cp $DIR/zshrc ~/.zshrc
