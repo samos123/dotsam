@@ -70,3 +70,5 @@ let g:go_fmt_command="gopls"
 let g:go_gopls_gofumpt=1
 
 let g:terraform_fmt_on_save=1
+
+set clipboard+=unnamedplus
